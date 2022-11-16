@@ -1,0 +1,21 @@
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  .title_cont {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .title_link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    // flex items-center gap-4
+  }
+
+
+}

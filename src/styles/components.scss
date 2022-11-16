@@ -1,0 +1,119 @@
+.scroll-slider {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  scroll-behavior: smooth;
+
+  // flex flex-nowrap overflow-hidden
+  .slider {
+    flex-shrink: 0;
+    width: 100%;
+
+
+  }
+}
+
+.pagination {
+  li {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    color: v.$primary;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+
+    &:nth-child(1n) {
+
+      &:nth-child(even) {
+        background: v.$ligh1;
+      }
+
+      &:last-child {
+        background-color: white;
+      }
+
+    }
+
+
+  }
+
+}
+
+.file-list {
+
+  li,tr {
+    background-color: white;
+    display: flex;
+    padding: 12px;
+
+    button {
+      margin-left: auto;
+    }
+
+    &:nth-child(even) {
+      @extend .border1;
+      border-left: 0px;
+      border-right: 0px;
+      background: v.$Gray1;
+    }
+
+  }
+}
+
+
+
+//  STYLES
+
+.buscador {
+  display: flex;
+  @extend .border2;
+  background-color: rgba(128, 170, 210, 0.2);
+  border-radius: 12px;
+  padding: 12px 16px;
+  color: v.$Gray1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  input {
+    border: none;
+    color: v.$ligh3;
+    padding: 0px;
+    background-color: transparent;
+    &:empty,
+    &:target,
+    &:focus {
+      // color: black;
+      outline-color: transparent;
+      border: none;
+
+    }
+  }
+
+
+}
+
+.dot_interes {
+  border-radius: 12px;
+  background-color: v.$ligh2;
+  gap: 12px;
+  padding: 2rem;
+
+  li {
+    list-style: disc ;
+    margin-left: 20px;
+  }
+  // bg-[#EBF5FF] gap-3 p-6 flex items-center
+
+
+}
+
+
+
+.dot_gray{
+  @apply bg-[#EBEDF0] rounded-full py-[10px] px-[17px] flex gap-2 w-max whitespace-nowrap
+
+}
+
+
